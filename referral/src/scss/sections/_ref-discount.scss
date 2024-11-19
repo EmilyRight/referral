@@ -1,0 +1,101 @@
+.ref-discount {
+  background: #000;
+  color: #fff;
+  border-radius: 1.6rem;
+  margin-bottom: 3rem;
+  @media (min-width: $mobile-small) {
+    background: #fff;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.2rem;
+    position: relative;
+    overflow: hidden;
+    @media (min-width: $mobile-small) {
+      background: #000;
+      border-radius: 3.2rem;
+      padding: 2.4rem;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &::before {
+      content: "";
+      width: 38rem;
+      height: 26rem;
+      opacity: 0.8;
+      will-change: filter;
+      -webkit-filter: blur(70px);
+      filter: blur(70px);
+      background-color: #00bfff;
+      position: absolute;
+      bottom: -11rem;
+      right: -10rem;
+    }
+  }
+
+  &__content {
+    @media (min-width: $mobile-small) {
+      max-width: 54%;
+    }
+  }
+
+  &__picture {
+    position: relative;
+    min-height: 23rem;
+    @media (min-width: $mobile-small) {
+      min-height: 25rem;
+      width: 30%;
+    }
+  }
+
+  .ref-content {
+    display: flex;
+    flex-direction: column;
+    &__title {
+      font-family: $font2;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 2.2rem;
+      line-height: 2.4rem;
+      margin: 0;
+      margin-bottom: 0.8rem;
+    }
+
+    &__text {
+      @include text-main;
+      margin-bottom: 2.4rem;
+      @media (min-width: $mobile-small) {
+      }
+    }
+
+    &__btn {
+      @media (min-width: $mobile-small) {
+        margin-top: auto;
+        margin-bottom: 0;
+        max-width: fit-content;
+      }
+    }
+  }
+
+  .pic-layer {
+    max-width: 25rem;
+    margin: 0 auto;
+    transform: rotate(26deg);
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    @media (min-width: $mobile-small) {
+      width: 93%;
+      max-width: none;
+      position: absolute;
+      margin: 0;
+      right: 1%;
+      bottom: -12%;
+    }
+  }
+}

@@ -1,0 +1,144 @@
+.invite {
+  text-align: center;
+  position: relative;
+  padding-top: 1.6rem;
+  @media (min-width: 600px) {
+    padding-top: 4.8rem;
+  }
+  .container {
+  }
+
+  .section-content {
+    background-color: $color-dark;
+    color: #fff;
+    padding: 1.2rem;
+    border-radius: 1.6rem;
+    @media (min-width: 600px) {
+      border-radius: 3.2rem;
+      padding: 2.4rem;
+    }
+  }
+
+  &__title {
+    @include section-title-main;
+    font-size: 2.2rem;
+    line-height: 2.3rem;
+    text-align: left;
+    margin-bottom: 1.2rem;
+    @media (min-width: $mobile) {
+      font-size: 2.4rem;
+      line-height: 2.2rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__text {
+    width: 100%; //color:$color-dark;
+    text-align: left;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    @media (min-width: $mobile) {
+      font-weight: 400;
+      color: #fff;
+      font-size: 1.5rem;
+      line-height: 2.2rem;
+    }
+    &--gray {
+      margin-top: 1.2rem;
+      padding: 0;
+      @media (min-width: $mobile) {
+        width: 100%;
+        margin-top: 1.8rem;
+      }
+    }
+  }
+  &__btn {
+    font-weight: 700; //background:  #1f2229 !important;color:#fff !important;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    padding: 1.3rem 3.5rem;
+    margin-top: 2.6rem;
+    @media (min-width: $mobile) {
+      margin-top: 3rem;
+      margin: 4.6rem 0 0;
+      padding: 1.6rem 2.4rem;
+      max-width: fit-content;
+    }
+  }
+
+  .link {
+    color: #fff;
+  }
+
+  .bg-layer {
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    pointer-events: none;
+    .pic-layer {
+      position: absolute;
+      top: 0;
+      width: 40rem;
+      height: 40rem;
+      $offset: -24rem; //-14rem -22rem
+      &--left {
+        left: $offset;
+      }
+      &--right {
+        right: $offset;
+      }
+    }
+    .cube {
+      position: relative;
+      width: 38.2rem;
+      height: 38.2rem;
+      //&:after,
+      // &:before {
+      //   position: absolute;
+      //   width: 100%;
+      //   height: 100%;
+      //   content: "";
+      //   display: block;
+      //   opacity: 0.7;
+      //   background: url("../img/page/block.png") no-repeat 50% 50%;
+      //   background-size: contain;
+      //   z-index: 1;
+      //   pointer-events: none;
+      // }
+      &:after {
+        margin-top: 5%;
+        margin-left: 5%;
+        z-index: 0;
+      }
+    }
+    .invite-pic {
+      position: absolute;
+      left: 32%;
+      top: 34%;
+      z-index: 2;
+      width: 30%;
+      img {
+        width: 100%;
+        display: block;
+        box-sizing: border-box;
+      }
+
+      &--pic1 {
+      }
+      &--pic2 {
+        width: 44%;
+        top: 40%;
+        left: 35%;
+      }
+    }
+
+    @media (max-width: $mobile) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.end-program{
+  &__block{
+    margin: 8rem 0 20.1rem 0;
+    box-shadow: 0rem 0.4rem 2rem rgba(0, 0, 0, 0.08);
+    border-radius: 1.6rem;
+    padding: 3.6rem;
+    @media (max-width: $mobile){
+      padding: 2.4rem 1.8rem;
+      margin: 4.6rem 0 6.4rem 0;
+    }
+    &--title{
+      display: flex;
+      justify-content: space-between;
+
+      h2{
+        font-size: 3.8rem;
+        line-height: 4.4rem;
+        margin-bottom: 3rem;
+      @media (max-width: $mobile) {
+        font-size: 2.8rem;
+        line-height: 3.6rem;
+      }}
+    }
+    &--image{
+
+      margin-top: -1rem;
+      margin-right: 12rem;
+      @media (max-width: $mobile){
+        margin-top: 0rem;
+        margin-right: 12rem;
+      }
+      img{width: 14rem;display: block;box-sizing: border-box;
+        padding: 0;
+      position: absolute;
+        @media (max-width: $mobile) {
+          width: 12rem;
+        }
+        @media (max-width: 360px) {
+          width: 9rem;
+        }
+      }
+    }
+    &--text{
+      font-size: 2.2rem;
+      line-height: 2.8rem;
+      @media (max-width: $mobile) {
+        font-size: 1.9rem;
+        line-height: 2.6rem;
+      }
+    }
+  }
+}

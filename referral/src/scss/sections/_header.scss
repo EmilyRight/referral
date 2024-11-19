@@ -1,0 +1,18 @@
+.header {
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  background-color: #000;
+  
+  &__logo {
+    width: 4rem;
+
+    @media (min-width: $mobile) {
+      width: 6rem;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+}

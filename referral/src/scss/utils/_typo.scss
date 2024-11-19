@@ -1,0 +1,23 @@
+.link {
+  text-decoration: underline;
+  cursor: pointer;
+  font-family: $font1;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.btn {
+  @include btn;
+}
+
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+
+  margin: 0;
+}
