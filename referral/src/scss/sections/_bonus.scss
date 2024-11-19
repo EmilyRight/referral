@@ -57,7 +57,7 @@
       padding-top: 11rem;
       box-sizing: border-box;
       @media (min-width: $mobile) {
-        width: 11%;
+        width: 8%;
       }
 
       &:before {
@@ -66,19 +66,21 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: url(../img/page/heart-blue.png) no-repeat 50% 55%;
+        background: url(../img/page/heart-white.png) no-repeat 50% 55%;
         background-size: contain;
-        filter: grayscale(1) brightness(1.4);
+        // filter: grayscale(1) brightness(1.4);
         opacity: 0.9;
-        transform: scale(0.7);
+
         transition: 0.1s linear;
       }
       &._is-selected {
         &:before {
-          filter: grayscale(0%);
+          // filter: grayscale(0%);
           opacity: 1;
-          transform: scale(0.9);
+
+          background: url(../img/page/heart-blue.png) no-repeat 50% 55%;
           background-position: 50% 55%;
+          background-size: contain;
           transition: 0.3s linear;
         }
       }
@@ -91,30 +93,10 @@
       }
 
       &:hover {
-        //&:before{background-size:8rem;}
         .caption {
           transform: scale(1.1);
         }
       }
-      &:focus,
-      &:active {
-        // &:before {
-        //   background-size: 8rem;
-        // }
-      }
-
-      // @media (max-width: $mobile) {
-      //   width: 36%;
-      //   margin-left: 4%;
-      //   margin-right: 2%;
-      //   &:before {
-      //     background-position: 50% 60%;
-      //     background-size: 80%;
-      //   }
-      // }
-      // @media (max-width: 600px) {
-      //   margin: 0;
-      // }
     }
   }
 }
