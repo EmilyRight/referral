@@ -149,15 +149,7 @@
       margin-bottom: 3.6rem;
     }
   }
-  .counter-result {
-    // display: flex;
-    // align-items: flex-end;
-    // gap: 1rem;
-    // @media (min-width: $mobile) {
-    //   flex-direction: column;
-    //   align-items: flex-start;
-    // }
-  }
+
 
   .column--right {
     display: flex;
@@ -170,8 +162,7 @@
       max-width: 100%;
       width: 21%;
       align-items: flex-start;
-      justify-content: flex-start;
-      gap: 38%;
+      justify-content: space-between;
     }
 
     .counter-result {
